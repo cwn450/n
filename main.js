@@ -2,7 +2,7 @@ nosex=0
 nosey=0
 
 function preload(){
-
+clown_nose=loadImage('https://i.postimg.cc/VvxDpKDD/pngtree-clown-red-nose-animation-illustration-image-1243961.jpg')
 }
 
 function setup(){
@@ -21,9 +21,10 @@ function modelLoaded(){
 }
 function draw(){
 image(video,0,0,300,300)
-fill(255,0,0);
+/*fill(255,0,0);
 stroke(255,0,0);
-circle(nosex,nosey,20);
+circle(nosex,nosey,20);*/
+image(clown_nose,nosex-15,nosey-15,30,30)
 }
 
 function take_snapshot(){
